@@ -2,6 +2,8 @@
 
 > Nuxt, with Apollo Authorization using JWT
 
+This example _does not_ include session logic, as I felt that would over-complicate the repo, and they're really two distinct pieces of functionality.  So this example assumes the JWT has already been received/extracted/etc..  For an example for handling sessions, check out the [Nuxt Auth Routes](https://nuxtjs.org/examples/auth-routes) example.
+
 ## Build Setup
 
 ``` bash
