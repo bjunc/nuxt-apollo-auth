@@ -1,0 +1,15 @@
+
+@import "node_modules/bourbon/app/assets/stylesheets/bourbon";
+@import "node_modules/bulma/sass/utilities/variables";
+
+$default_font_size: 14px;
+$line_height_ratio: 1.33; // perfect-fourth
+// $line_height_ratio: 1.414; // augmented-fourth
+$base_line_height: round($line_height_ratio * $default_font_size);
+$blh: $base_line_height; //shortcut since it's used sooo much
+
+// $type-scale-ratio: 1.33; // perfect-fourth
+$type-scale-ratio: 1.414; // augmented-fourth
+@function type-scale($scale){
+	@return round($scale * $default_font_size * $type-scale-ratio);
+};

@@ -10,7 +10,8 @@ module.exports = {
       { hid: 'description', name: 'description', content: 'Nuxt with Apollo auth and sessions' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,600,600i,700,700i' }
     ]
   },
   modules: ['@nuxtjs/apollo'],
@@ -24,6 +25,9 @@ module.exports = {
   ** Customize the progress-bar color
   */
   loading: { color: '#3B8070' },
+  css: [
+    { src: 'bulma', lang: 'sass' }, 
+  ],
   /*
   ** Build configuration
   */
