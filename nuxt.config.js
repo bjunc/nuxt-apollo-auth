@@ -13,6 +13,13 @@ module.exports = {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
+  modules: ['@nuxtjs/apollo'],
+  apollo: {
+    networkInterfaces: {
+      default: '~/apollo/network-interfaces/default.js'
+    }
+  },
+  plugins: ['~/plugins/apollo-auth'],
   /*
   ** Customize the progress-bar color
   */
