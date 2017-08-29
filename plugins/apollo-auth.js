@@ -1,6 +1,3 @@
-/* eslint-disable */
-// import cookie  from 'cookie'
-
 export default (context) => {
 	let token = context.store.state.token
 	let client = context.app.apolloProvider.defaultClient
